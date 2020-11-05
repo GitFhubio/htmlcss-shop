@@ -30,3 +30,13 @@ background-color:green;
 .sconto.poco{
   background-color:red;
 }
+.cuore-container{
+  display: none;
+  width:100%;
+  position: absolute;
+  color:red;
+  bottom: 0;
+}
+.row:first-child .item:nth-child(2):hover .cuore-container {
+  display:block;
+}
