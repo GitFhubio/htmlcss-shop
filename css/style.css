@@ -37,6 +37,6 @@ background-color:green;
   color:red;
   bottom: 0;
 }
-.row:first-child .item:nth-child(2):hover .cuore-container {
+.item:hover .cuore-container {
   display:block;
 }
