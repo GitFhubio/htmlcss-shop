@@ -5,15 +5,17 @@
 }
 
 .container{
-  width:1200px;
-  height:500px;
-  background-color: red;
+  width:1000px;
+  background-color: #fff;
 }
-
+.row{
+  width:100%;
+  margin-bottom: 30px;
+}
 .item{
+  text-align: center;
   width:33%;
-  height:250px;
-  background-color: green;
+  background-color: #eee;
   display:inline-block;
   border:1px solid black;
 }
