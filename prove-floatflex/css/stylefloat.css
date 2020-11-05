@@ -1,0 +1,65 @@
+*{
+  padding:0;
+  margin:0 auto;
+  box-sizing: border-box;
+}
+
+.container{
+  width:100%;
+  background-color: #fff;
+}
+.row{
+  width:100%;
+  margin-bottom: 30px;
+}
+.row::after{
+  display:table;
+  clear: both;
+  content:"";
+}
+.item{position:relative;
+  text-align: center;
+  width:calc(100% / 3 - 10px);
+  margin:5px;
+  float:left;
+  background-color: #eee;
+  border:1px solid black;
+}
+
+.sconto{
+position:absolute;
+top:0;
+right:0;
+background-color:green;
+}
+
+.sconto.poco{
+  background-color:red;
+}
+.cuore-container{
+  display: none;
+  width:100%;
+  position: absolute;
+  color:red;
+  bottom: 0;
+}
+.item:hover .cuore-container {
+  display:block;
+}
+img{
+  width:100%;
+  height:auto;
+}
+
+@media (max-width: 767px)
+{
+  .item{
+    width:100%;
+  }
+  .row{
+    margin-bottom: 5px;
+  }
+  .row::after{
+    display:none;
+  }
+}

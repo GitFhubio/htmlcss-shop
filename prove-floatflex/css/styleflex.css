@@ -1,0 +1,53 @@
+*{
+  padding:0;
+  margin:0 auto;
+  box-sizing: border-box;
+}
+
+.container{
+  width:100%;
+  background-color: #fff;
+  display:flex;
+  flex-wrap:wrap;
+  align-content: space-around;
+}
+
+.item{position:relative;
+  text-align: center;
+  flex-basis:30%;
+  background-color: #eee;
+  border:1px solid black;
+  margin-bottom: 10px;
+
+}
+
+.sconto{
+position:absolute;
+top:0;
+right:0;
+background-color:green;
+}
+
+.sconto.poco{
+  background-color:red;
+}
+.cuore-container{
+  display: none;
+  width:100%;
+  position: absolute;
+  color:red;
+  bottom: 0;
+}
+.item:hover .cuore-container {
+  display:block;
+}
+img{
+  width:100%;
+  height:auto;
+}
+@media (max-width: 767px)
+{
+
+  .item{flex-basis:100%;}
+
+}
